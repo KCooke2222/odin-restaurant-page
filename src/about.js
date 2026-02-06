@@ -1,5 +1,5 @@
+import hero from "./img/Denny.jpg";
 const content = document.querySelector("#content");
-import hero from "./hero.jpg";
 
 function loadAbout() {
   // title wrapper
@@ -30,7 +30,7 @@ function loadAbout() {
 
   const storyP = document.createElement("p");
   storyP.textContent =
-    "Founded in 2020, our restaurant focuses on simple ingredients, bold flavors, and a welcoming atmosphere.";
+    "We started as a neighborhood spot with one goal: make a giant burger worth the trip.";
   storySection.appendChild(storyP);
   content.appendChild(storySection);
 
@@ -44,7 +44,7 @@ function loadAbout() {
 
   const missionP = document.createElement("p");
   missionP.textContent =
-    "To serve high-quality food made with care, while creating a place people want to come back to.";
+    "Cook it hot, keep it simple, treat people right, and never skimp on the stack.";
   missionSection.appendChild(missionP);
   content.appendChild(missionSection);
 }

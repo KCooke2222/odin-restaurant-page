@@ -91,46 +91,42 @@ button:hover {
 
 .menu-item {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-  padding: 16px 0;
-  width: min(900px, 92%);
+  align-items: flex-start;
+  justify-content: center;
+  gap: 12px;
+  padding: 12px 0;
+  width: min(720px, 92%);
   margin: 0 auto;
 }
 
 .menu-info {
-  flex: 1;
-}
-
-.menu-image {
-  width: min(35%, 220px);
-  height: auto;
-  flex: 0 0 auto;
-}
-
-.menu-price {
-  font-weight: 700;
-  margin-top: 8px;
-}
-
-.menu-item {
+  flex: 0 1 320px;
   display: flex;
-  gap: 24px;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 6px;
+  text-align: left;
 }
 
 .menu-image {
-  width: min(40%, 260px);
-  height: auto;
+  width: 220px;
+  height: 220px;
   flex: 0 0 auto;
-}
-
-.menu-info {
-  flex: 1;
+  object-fit: cover;
 }
 
 .menu-price {
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 14px;
+  margin: 0;
+}
+
+.menu-info h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.menu-info p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.35;
 }

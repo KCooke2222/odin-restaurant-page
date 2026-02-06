@@ -1,37 +1,53 @@
+import burgerClassic from "./img/6ab99ab9-2606-4c9f-8379-4d80845b2b54_1920x1080.jpg";
+import burgerBun from "./img/burger_with_bun.webp";
+import burgerDenny from "./img/Denny.jpg";
+import burgerHQ from "./img/hq720.jpg";
+import burgerStack from "./img/jk9kllaorr211.jpg";
 const content = document.querySelector("#content");
 
 const sections = [
   {
-    name: "Starters",
+    name: "Classic Giants",
     items: [
       {
-        name: "Garlic Bread",
-        description: "Toasted bread with garlic butter",
-        price: 5.99,
-        image: "https://via.placeholder.com/150",
+        name: "Giant Classic",
+        description: "Big burger, big bite.",
+        price: 12.99,
+        image: burgerClassic,
       },
       {
-        name: "Bruschetta",
-        description: "Tomato, basil, olive oil",
-        price: 6.99,
-        image: "https://via.placeholder.com/150",
+        name: "Bun Giant",
+        description: "Simple, stacked, bold.",
+        price: 11.99,
+        image: burgerBun,
       },
     ],
   },
   {
-    name: "Mains",
+    name: "Loaded Towers",
     items: [
       {
-        name: "Margherita Pizza",
-        description: "Tomato, mozzarella, basil",
-        price: 12.99,
-        image: "https://via.placeholder.com/150",
+        name: "Tower Deluxe",
+        description: "Tall, juicy, loaded.",
+        price: 14.49,
+        image: burgerHQ,
       },
       {
-        name: "Pasta Carbonara",
-        description: "Creamy sauce, pancetta, parmesan",
-        price: 14.99,
-        image: "https://via.placeholder.com/150",
+        name: "Big Pepper",
+        description: "Crunch, sauce, heft.",
+        price: 13.99,
+        image: burgerStack,
+      },
+    ],
+  },
+  {
+    name: "Crispy & Crunchy",
+    items: [
+      {
+        name: "Crunch Giant",
+        description: "Crisp outside, soft inside.",
+        price: 12.49,
+        image: burgerDenny,
       },
     ],
   },
@@ -64,7 +80,7 @@ function createMenuItem(item) {
   img.src = item.image;
   img.alt = item.name;
 
-  infoDiv.append(name, desc, price);
+  infoDiv.append(name, price, desc);
   itemDiv.append(infoDiv, img);
   return itemDiv;
 }

@@ -1,5 +1,5 @@
+import hero from "./img/hero.jpg";
 const content = document.querySelector("#content");
-import hero from "./hero.jpg";
 
 function loadHome() {
   // title wrapper
