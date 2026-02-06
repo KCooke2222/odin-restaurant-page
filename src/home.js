@@ -12,6 +12,7 @@ function loadHome() {
   const heroImage = document.createElement("img");
   heroImage.className = "hero";
   heroImage.src = hero;
+  content.appendChild(heroImage);
 
   // hours
   const hoursHead = document.createElement("h1");
