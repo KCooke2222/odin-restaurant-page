@@ -42,6 +42,9 @@ function createMenuItem(item) {
   const itemDiv = document.createElement("div");
   itemDiv.className = "menu-item";
 
+  const infoDiv = document.createElement("div");
+  infoDiv.className = "menu-info";
+
   // h3 (name)
   const name = document.createElement("h3");
   name.textContent = item.name;
@@ -52,22 +55,24 @@ function createMenuItem(item) {
 
   // h3 (price)
   const price = document.createElement("h3");
-  price.className = "price";
+  price.className = "price menu-price";
   price.textContent = `$${item.price}`;
 
   // img
   const img = document.createElement("img");
+  img.className = "menu-image";
   img.src = item.image;
   img.alt = item.name;
 
-  itemDiv.append(name, desc, price, img);
+  infoDiv.append(name, desc, price);
+  itemDiv.append(infoDiv, img);
   return itemDiv;
 }
 
 function createMenuSection(section) {
   // div
   const sectionDiv = document.createElement("div");
-  sectionDiv.className = "menu-section";
+  sectionDiv.className = "menu-section section-block";
 
   // name
   const name = document.createElement("h1");
